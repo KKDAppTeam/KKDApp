@@ -1,0 +1,138 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 1000px) {
+  body{
+    min-width: 750px;
+    margin: 0 auto
+  }
+}
+
+body, button, input, select, textarea {
+  font: 12PX/1.5 tahoma, arial, 'microsoft yahei', sans-serif;
+    -webkit-tap-highlight-color: rgba(240,240,240,0)
+
+}
+button::selection, input::selection, select::selection, textarea::selection{
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+
+code, kbd, pre, samp {
+  font-family: couriernew, courier, monospace;
+}
+
+small {
+  font-size: 12PX;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+legend {
+  color: #000;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+button, input, select, textarea {
+  font-size: 100%;
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+// 添加公共样式
+.nav-back {
+  height 100%
+  display flex
+  justify-content center
+  align-items center
+  .icon-ic_back {
+    font-size 36px
+    color #595959
+  }
+}
+.nav-title {
+  font-size 15px
+  font-weight bold
+  color #595959
+}
+.decision-nav-bar {
+  position absolute !important
+  top 0
+  left 0
+  width 100%
+}
+@-webkit-keyframes loading {
+  0% { -webkit-transform:rotate(0deg);}
+  100% { -webkit-transform: rotate(360deg);}
+}
+@media only screen and (max-width: 500px) and (min-width: 450px) {
+    html {
+      font-size: 155%;
+    }
+  }
+  
+  @media only screen and (max-width: 450px) and (min-width: 400px) {
+    html {
+      font-size: 140%;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) and (min-width: 350px) {
+    html {
+      font-size: 125%;
+    }
+   
+  }
+  
+  @media only screen and (max-width: 350px) and (min-width: 300px) {
+    html {
+      font-size: 105%;
+    }
+  }
+  
+  @media only screen and (max-width: 300px) and (min-width: 250px) {
+    html {
+      font-size: 90%;
+    }
+  }
+  
+  @media only screen and (max-width: 250px) and (min-width: 200px) {
+    html {
+      font-size: 75%;
+    }
+  }
+  @media only screen and (min-width: 700px) {
+      .mint-msgbox {
+        width: 400*0.85px
+      }
+  }

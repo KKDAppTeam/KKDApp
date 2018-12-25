@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <% for (var i in htmlWebpackPlugin.options.cdn&&htmlWebpackPlugin.options.cdn.css) { %>
+        <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="preload" as="style">
+        <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="stylesheet">
+        <% } %>
+    <!-- 使用CDN加速的JS文件，配置在vue.config.js下 -->
+    <% for (var i in htmlWebpackPlugin.options.cdn&&htmlWebpackPlugin.options.cdn.js) { %>
+        <script src="<%= htmlWebpackPlugin.options.cdn.js[i] %>"></script>
+    <% } %>
+    <!-- 使用CDN加速的JS文件，配置在vue.config.js下 -->
+    <% for (var i in htmlWebpackPlugin.options.cdn&&htmlWebpackPlugin.options.cdn.js) { %>
+        <link href="<%= htmlWebpackPlugin.options.cdn.js[i] %>" rel="preload" as="script">
+        <% } %>
+        <title></title>
+    </head>
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?4ebbce73f9b2051aba0bd7213ddf9609";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!-- <script src='./js/TronWeb.js'></script> -->
+<body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+</html>
