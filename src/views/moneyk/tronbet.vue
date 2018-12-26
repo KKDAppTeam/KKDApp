@@ -887,7 +887,7 @@ export default {
             let listItem = {
                 bet: order.tx.trxAmount.div(1e6).toNumber(),
                 win: isWin,
-                bonus: isWin ? this.betdata * 98.5 / (order.direction === 0 ? order.number : 99 - order.number) : this.betdata,
+                bonus: isWin ? order.tx.trxAmount.div(1e6).toNumber() * 98.5 / (order.direction === 0 ? order.number : 99 - order.number) : order.tx.trxAmount.div(1e6).toNumber(),
                 number: order.number,
                 roll: order.roll,
                 orderId: order.orderId

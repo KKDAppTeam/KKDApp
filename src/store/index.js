@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import tronbet from './modules/tronbet';
-import envelope from './modules/envelope';
 Vue.use(Vuex);
 const state = {
     locales: ['en', 'zh_cn', 'zh_tw'],
@@ -28,6 +27,5 @@ export default new Vuex.Store({
     mutations,
     modules: {
         tronbet,
-        envelope
     },
 });
